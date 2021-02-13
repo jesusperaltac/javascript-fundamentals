@@ -1,23 +1,27 @@
-function hello() {
-    console.log('hello');
+function task() {
+    const name = 'Task 1';
+    console.log(`Task function: ${name} - start`);
+    printName(name);
+    console.log(`Task function: ${name} - end`);
 }
 
-function world() {
-    console.log('world');
+function printName(name) {
+    console.log(`Task function: printing... ${name}`);
 }
 
-function main() {
-    hello();
-    world();
+function callStack() {
+    debugger
+    task();
 }
 
-debugger
-main();
-
-function asyncHello() {
-    console.log('function: starts');
-    setTimeout(() => console.log('async function: hello'), 1000);
-    console.log('function: ends');
+function timer(seconds = 1) {
+    console.log(`Timer function: ${seconds}s - start`);
+    setTimeout(() => console.log(`Timer function: ${seconds}s is over `), seconds*1000);
+    console.log(`Timer function: ${seconds}s - end`);
 }
 
-asyncHello();
+function eventLoop() {
+    debugger
+    timer(2);
+    task();
+}

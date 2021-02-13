@@ -1,2 +1,2 @@
 # javascript-fundamentals
-Repository for learning the javascript fundamentals thought examples and applying best practices
+Repository for learning the javascript fundamentals through examples and applying best practices
