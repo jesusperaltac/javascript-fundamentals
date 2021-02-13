@@ -1,0 +1,20 @@
+{
+  "name": "javascript-fundamentals",
+  "version": "1.0.0",
+  "description": "Repository for learning the javascript fundamentals through examples and applying best practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "fundamentals",
+    "learning",
+    "examples",
+    "best",
+    "practices",
+    "programming"
+  ],
+  "author": "Jesús Peralta",
+  "license": "MIT"
+}
