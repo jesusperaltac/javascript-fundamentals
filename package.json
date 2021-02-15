@@ -1,7 +1,7 @@
 {
   "name": "javascript-fundamentals",
   "version": "1.0.0",
-  "description": "Repository for learning the javascript fundamentals through examples and applying best practices",
+  "description": "Repository for learning the javascript fundamentals and best practices through code examples",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

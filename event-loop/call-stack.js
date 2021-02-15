@@ -1,27 +1,25 @@
-function task() {
-    const name = 'Task 1';
-    console.log(`Task function: ${name} - start`);
-    printName(name);
-    console.log(`Task function: ${name} - end`);
+function task(name = 'My task') {
+    printTask(name);
+    finishTask(name);
 }
 
-function printName(name) {
-    console.log(`Task function: printing... ${name}`);
+function printTask(name) {
+    console.log(`${name} printed`);
 }
 
-function callStack() {
-    debugger
-    task();
+function finishTask(name) {
+    console.log(`${name} finished`);
 }
 
 function timer(seconds = 1) {
-    console.log(`Timer function: ${seconds}s - start`);
-    setTimeout(() => console.log(`Timer function: ${seconds}s is over `), seconds*1000);
-    console.log(`Timer function: ${seconds}s - end`);
+    setTimeout(() => task(`Timer Task ${seconds}s`), seconds*1000);
 }
 
 function eventLoop() {
-    debugger
-    timer(2);
-    task();
+    timer(10);
+    timer(1);
+    Promise.resolve().then(() => task('Promise Task'));
+    task('Sync Task');
 }
+
+eventLoop();
